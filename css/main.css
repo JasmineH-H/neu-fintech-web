@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* How to use REM
+https://elementor.com/blog/what-is-rem-in-css/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&lang=&gad_source=1&gbraid=0AAAAADSBr8sjqK1uMc0aX5wvI_c04z9Lr
+*/
+body {
+    height: 100vh;
+    color: #7a646f;
+    font-family: "basic-san", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+  

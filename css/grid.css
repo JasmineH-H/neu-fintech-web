@@ -1,0 +1,19 @@
+/* This file contains the grid layout for the website. */
+.grid{
+    display: grid;
+}
+
+/* 
+Fr is a fractional unit and 1fr is for 1 part of the available space. 
+For example, if you have 2 columns with 1fr each, 
+they will take up 50% of the available space each.
+*/
+.two-columns{
+    grid-template-columns: 1fr 1fr;
+}
+
+.three-columns{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* You can create your own grid template by specifying the width of each column.*/
