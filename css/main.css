@@ -11,7 +11,12 @@ html {
 https://elementor.com/blog/what-is-rem-in-css/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&lang=&gad_source=1&gbraid=0AAAAADSBr8sjqK1uMc0aX5wvI_c04z9Lr
 */
 body {
-    height: 100vh;
+    background-color: #000;
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     color: #7a646f;
     font-family: "basic-san", sans-serif;
     font-weight: 400;
