@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+.hero {
+    background-image: url(space.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: "basic-san", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.button {
+    width: 305px;
+    height: 78px;
+    line-height: 78px;
+    padding: 10px 20px;  /* Adds space inside the button */
+    background-color: #C8102E;  /* Green background color */
+    color: white;  /* White text color */
+    border-radius: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;  /* Shows a pointer when hovering over the button */
+    text-align: center;  /* Centers text inside the button */
+    display: inline-block;  /* Makes the button inline with text */
+    text-decoration: none;
+  }
+
+.hero-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item-1 {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: end;
+}
+
+.item-2 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 6;
+    justify-self: start;
+    align-self: center;
+}
+
+.item-3 {
+    grid-row: 4;
+    grid-column: 3;
+    justify-self: start;
+    align-self: center;
+}
+
+footer {
+    background-color: #C8102E;
+    opacity: 0.5;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 2;
+}
+
+.item-5 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.Copyright {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.icon {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.email {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.address {
+    grid-row: 3;
+    grid-column: 2;
+}
