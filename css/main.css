@@ -11,32 +11,146 @@ html {
 https://elementor.com/blog/what-is-rem-in-css/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&lang=&gad_source=1&gbraid=0AAAAADSBr8sjqK1uMc0aX5wvI_c04z9Lr
 */
 body {
-    background-color: #000;
-    background-image: url('../assets/bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(#000303, #454545);
     min-height: 100vh;
-    color: #7a646f;
+    color: white;
     font-family: "basic-san", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 p{
     font-size: 1rem;
 }
 
-  
+a{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.button_style1 {
+    text-decoration: none;
+    background-color: #C8102E;
+    color:white;
+    border-radius: 1.5rem;
+    font-weight: 700;
+    width: auto;
+    min-width: 15rem;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.button_style2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid #fff;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.button_style2:active{
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.button_style2:hover{
+    background: #ffffff55;
+    color: #fff;
+    border-color: none;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: "basic-san", sans-serif;
+    justify-content: center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-items: center;
+    align-items: center;
+}
+
+.hero-text{
+    font-weight: 300;
+}
+
+.hero-text, .hero-btn{
+    margin: 2rem 0;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+/*  Footer */
+footer {
+    background-color: rgba(200, 16, 46, 0.22);
+    opacity: 0.5;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    padding:2rem 4rem;
+}
+
+.footer-container {
+    grid-template-rows: 3;
+    grid-template-columns: 2;
+}
+
+.footer-logo {
+    grid-row: 1;
+    grid-column: 1;
+    max-width: 4rem;
+}
+
+.copyright {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.linkedin {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.linkedin img{
+    max-width: 2rem;
+}
+
+.email {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.address {
+    grid-row: 3;
+    grid-column: 2;
+}

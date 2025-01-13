@@ -6,39 +6,76 @@
     <link rel="stylesheet" href="https://use.typekit.net/nlp1cne.css">
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/grid.css" />
-    <link rel="stylesheet" href="./css/upcomingEvent.css" />
-    <link rel="stylesheet" href="./css/pastEvents.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/event.css" />
     <script src="./js/script.js" defer></script>
     <title>NEU Fintech</title>
   </head>
+
   <body>
-    
-    <div class="section-title">
+    <div class="hero">
+      <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">
+                <img src="./assets/logo.svg" alt="Logo" class="navbar__logo-img">
+            </a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+            <a href="/" class="navbar__links">Vision</a>
+            </li>
+            <li class="navbar__item">
+            <a href="/" class="navbar__links">Members</a>
+            </li>
+            <li class="navbar__item">
+            <a href="/" class="navbar__links">Activities</a>
+            </li>
+            <li class="navbar__btn">
+            <a href="/" class="button_style2">Join Us</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="hero-overlay">
+        <div class="hero-content grid two-rows">
+          <h1 class="hero-text">Pave your way to Fintech</h1>
+          <a href="https://www.example.com" class="button_style1 hero-btn">Join Us</a>
+        </div>
+      </div>
+  </div>
+
+  <section id="upcoming-event">
+    <div class="section-title-style1">
       <div class="title-bar"></div>
       <h2>Upcoming Event</h2>
     </div>
 
-  
-    <section id="upcoming-event" class="grid two-columns">
-      <div class="event-info">
+    <div class="event-info grid two-columns">
+      <div class="upcoming-event-details">
         <h3>Tech Interview Workshop</h3>
-        <div class="event-details">
-          <p class="date">November 19</p>
-          <p class="location">At North Collab Space</p>
-        </div>
+        <p class="date">November 19</p>
+        <p class="location">At North Collab Space</p>
         <p class="description">
           Unlock the secrets to landing a job at big tech companies! Detailed breakdown of software 
           engineering interview format. Analysis of each skill required to prepare for an interview.
         </p>
-        <button class="register-btn">Register Now</button>
+        <a href="https://www.example.com" class="button_style1 event_btn">Register Now</a>
       </div>
       <div class="event-image">
         <img src="./assets/poster.png" alt="event-image">
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="section-divider">
+    <div class="section-title-style2">
       <div class="line"></div>
       <h2>Past Events</h2>
       <div class="line"></div>
@@ -87,6 +124,27 @@
       <button class="arrow-btn next-btn">&gt;</button>
     </section>
     
+    <footer>
+      <div class="footer-container grid ">
+          <div class="footer-logo">
+              <img src="assets/logo.svg" alt="Fintech logo"/>
+          </div>
+          <div class="copyright">
+              <p>Copyright NEU Fintech © 2024. All rights reserved.</p>
+          </div>
+          <div class="linkedin">
+              <a href="https://example.com"></a>
+                  <img src="assets/linkedin.svg" alt="linkedin logo" width="70" height="70">
+              </a>
+          </div>
+          <div class="email">
+              <p>info@fintech.edu</p>
+          </div>
+          <div class="address">
+              <p>3000 Landerholm Cir SE Bellevue, WA 98007 United States</p>
+          </div>
+      </div>
+  </footer>
 
   </body>
 </html>

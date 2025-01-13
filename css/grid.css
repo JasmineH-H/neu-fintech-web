@@ -16,4 +16,9 @@ they will take up 50% of the available space each.
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.two-rows{
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: auto;
+}
+
 /* You can create your own grid template by specifying the width of each column.*/
