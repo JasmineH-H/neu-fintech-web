@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex < totalCards - cardsToShow) {
             currentIndex += cardsToShow;
             wrapper.style.transform = `translateX(-${currentIndex * (100 / cardsToShow)}%)`;
+        }else{
+            currentIndex = 0;
+            wrapper.style.transform = `translateX(-${currentIndex * (100 / cardsToShow)}%)`;
         }
     });
 
