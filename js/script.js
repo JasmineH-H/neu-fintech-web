@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const wrapper = document.querySelector('.events-wrapper');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
@@ -18,6 +18,31 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentPosition > maxScroll) {
             currentPosition -= cardWidth + 32;
             wrapper.style.transform = `translateX(${currentPosition}px)`;
+        }
+    });
+});*/
+
+/* modified vwrsion of the above code */
+document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.events-wrapper');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentIndex = 0;
+
+    nextBtn.addEventListener('click', function() {
+        const totalCards = wrapper.children.length;
+        const cardsToShow = window.innerWidth <= 960 ? 1 : 2;
+        if (currentIndex < totalCards - cardsToShow) {
+            currentIndex += cardsToShow;
+            wrapper.style.transform = `translateX(-${currentIndex * (100 / cardsToShow)}%)`;
+        }
+    });
+
+    prevBtn.addEventListener('click', function() {
+        const cardsToShow = window.innerWidth <= 960 ? 1 : 2;
+        if (currentIndex > 0) {
+            currentIndex -= cardsToShow;
+            wrapper.style.transform = `translateX(-${currentIndex * (100 / cardsToShow)}%)`;
         }
     });
 });

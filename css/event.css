@@ -102,17 +102,21 @@
 
 .events-container {
     overflow: hidden;
-    margin: 0 2rem;
+    /*margin: 0 2rem;*/
+    width: 100%;
 }
 
 .events-wrapper {
     display: flex;
-    gap: 5rem;
+    /*gap: 5rem;*/
     transition: transform 0.3s ease;
 }
 
 .past-event-card {
-    min-width: 39%;
+    /*min-width: 39%;*/
+    min-width: 45%;
+    box-sizing: border-box;
+    margin: 2.5%;
     background: rgba(197, 197, 197, 0.8);
     backdrop-filter: blur(5px);
     border-radius: 25px;
@@ -188,19 +192,12 @@
         width: 80%;
     }
 
-    #past-events {
-        padding: 1.5rem 2rem;
-    }
-
     .past-event-card {
-        min-width: 70%;
-        background: rgba(197, 197, 197, 0.8);
-        backdrop-filter: blur(5px);
-        border-radius: 25px;
-        padding: 2rem;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
+        min-width: 80%;
+        box-sizing: border-box;
+        margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
 }
