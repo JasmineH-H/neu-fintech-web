@@ -116,7 +116,7 @@
     /*min-width: 39%;*/
     min-width: 45%;
     box-sizing: border-box;
-    margin: 2.5%;
+    margin: 3%;
     background: rgba(197, 197, 197, 0.8);
     backdrop-filter: blur(5px);
     border-radius: 25px;
@@ -125,8 +125,8 @@
 }
 
 .past-event-card img {
-    width: 80%;
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
@@ -140,20 +140,20 @@
 .past-event-card .description {
     color: black;
     line-height: 1.6;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .arrow-btn {
     background: rgba(255, 255, 255, 0.1);
     border: none;
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: background-color 0.3s ease;
     position: absolute;
     top: 50%;
